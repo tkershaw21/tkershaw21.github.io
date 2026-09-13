@@ -3,7 +3,7 @@ header {
     background-color: #14213d; 
     color: white; 
     text-align: center;
-     padding: 20px; }
+    padding: 20px; }
 
  h1 { 
     color: white; 
@@ -13,6 +13,7 @@ header {
 .activities { 
     display: flex; 
     justify-content: center; 
+    flex-direction: column;
     gap: 20px;
     margin-top: 50px; 
 } 
