@@ -1,1 +1,64 @@
+/*1. Romove bullet points and arrange the navigation items horizontally. */
+ul{
+    list-style-type: non;
+    display:flex;
+}
 
+/* 2. Change the background behind the text of the li elements. */
+li{
+    background-color: lightblue;
+    color: white;
+}
+
+/* 3a. Enlarge the left and right sides of the list items by 30 pixels using margin. */
+/* li {
+    margin-left: 30px;
+    margin-right: 30px;
+} */
+
+/* 3b. Enlarge the left and right sides of the list items by 30em using margin. */
+/*li {
+    margin-left: 30em;
+    margin-right: 30em;
+}*/
+
+/* 4a. Enlarge the left and right sides of the list items by 30 pixels using padding. */
+/*li {
+    padding-left: 30px;
+    padding-right: 30px;
+}*/
+
+/* 4b. Enlarge the left and right sides of the list items by 30em using padding. */
+/* li {
+    padding-left: 30em;
+    padding-right: 30em;
+} */
+
+/* 4c. Make the padding the width desired. */
+li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* 5. Move the paragraph in the footer to the right side of the screen. */
+footer p {
+    text-align: right;
+}
+
+/* 6. Adjust the image height and width to 400 x 400. */
+img {
+    height: 400px;
+    width: 400px;
+}
+
+/* 7. Place the span on top of the image's lower right corner. */
+div {
+    position: relative;
+    display: inline-block;
+}
+span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+}
