@@ -1,0 +1,40 @@
+/* 1. Adjust the header and top-level heading */
+header { 
+    background-color: #14213d; 
+    color: white; 
+    text-align: center;
+     padding: 20px; }
+
+ h1 { 
+    color: white; 
+} 
+
+/* 2. Center the div containing the Project 1 and Activity 2 links */ 
+.activities { 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px;
+    margin-top: 50px; 
+} 
+.activities a { 
+    background-color: #14213d; 
+    color: white; 
+    padding: 20px; 
+    text-decoration: none; 
+} 
+/* 3. Adjust the footer color and force it to the bottom */ 
+body { 
+    min-height: 100vh; 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+} 
+main {
+     flex: 1; 
+    } 
+
+footer {
+    background-color: #14213d; 
+    color: white; text-align: center; 
+    padding: 15px; 
+    }
