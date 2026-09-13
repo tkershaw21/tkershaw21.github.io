@@ -1,6 +1,6 @@
 /*1. Romove bullet points and arrange the navigation items horizontally. */
 ul{
-    list-style-type: non;
+    list-style-type: none;
     display:flex;
 }
 
