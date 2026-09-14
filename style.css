@@ -14,11 +14,12 @@ header {
     display: flex; 
     justify-content: center; 
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     margin-top: 50px; 
 } 
 .activities a { 
-    background-color: #14213d; 
+    background-color: black; 
     color: white; 
     padding: 20px; 
     text-decoration: none; 
