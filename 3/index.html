@@ -1,1 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSCI 3054 Project 2 proposal for a Solar System Explorer web application.">
+    <meta name="author" content="Tyrell Kershaw">
+    <title>Solar System Explorer - Project 2 Proposal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
+<body>
+
+    <header>
+        <h1>Solar System Explorer</h1>
+        <p>CSCI 3054 Web Programming - Project 2</p>
+        <p>Tyrell Kershaw</p>
+    </header>
+
+    <main>
+
+        <section id="topic-description">
+            <h2>Topic Description</h2>
+
+            <p>
+                The Solar System is the collection of the Sun and the planets, moons,
+                dwarf planets, asteroids, comets, and other objects that orbit it.
+                Although people learn about the Solar System in school, there is a
+                large amount of information about these objects that can be difficult
+                to organize and explore. My web application, Solar System Explorer,
+                will provide users with an organized and interactive way to learn
+                about different objects in the Solar System. I chose this topic
+                because space and astronomy provide many interesting subjects to
+                explore, and a web application can make the information easier to
+                navigate than searching through many different websites.
+            </p>
+
+            <p>
+                There are already websites that provide information about space.
+                For example, NASA provides extensive information about planets,
+                moons, spacecraft, missions, and other areas of space science.
+                The European Space Agency also provides educational information
+                about astronomy and space missions. However, these resources contain
+                a large amount of information across many different pages. Solar
+                System Explorer will focus specifically on organizing information
+                into a simple two-step exploration process. Users will first select
+                a category of Solar System object and then select a specific object
+                from that category. This approach will give users a simple way to
+                find information without having to search through unrelated
+                information.
+            </p>
+        </section>
+
+
+        <section id="app-description">
+            <h2>Application Description</h2>
+
+            <p>
+                The first page of the application will be the Home page. This page
+                will introduce users to the Solar System Explorer and explain what
+                they can learn from the application. It will contain a short
+                introduction to the Solar System, space-related images, and
+                navigation links to the other pages. The goal of the Home page will
+                be to give users an understanding of what the application does before
+                they begin exploring the available objects.
+            </p>
+
+            <p>
+                The second page will be the Explore page. This will be the main
+                interactive portion of the application. Users will complete two
+                steps in sequence. First, they will select one of four categories
+                of Solar System objects. After making that selection, the application
+                will provide four choices from that category. The user will then
+                select one of those objects to see information about it. The final
+                result will contain the object's name, image, description, size,
+                location or distance, and an interesting fact.
+            </p>
+
+            <h3>Two-Step Interaction</h3>
+
+            <ol>
+                <li>
+                    <strong>Step 1: Choose a category</strong>
+
+                    <ul>
+                        <li>Planets</li>
+                        <li>Moons</li>
+                        <li>Dwarf Planets</li>
+                        <li>Small Solar System Bodies</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Step 2: Choose an object from the selected category</strong>
+
+                    <ul>
+                        <li>
+                            <strong>Planets:</strong>
+                            Mercury, Venus, Earth, Mars
+                        </li>
+
+                        <li>
+                            <strong>Moons:</strong>
+                            Moon, Europa, Titan, Ganymede
+                        </li>
+
+                        <li>
+                            <strong>Dwarf Planets:</strong>
+                            Pluto, Ceres, Eris, Haumea
+                        </li>
+
+                        <li>
+                            <strong>Small Solar System Bodies:</strong>
+                            Asteroids, Comets, Meteoroids, Kuiper Belt Objects
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+
+            <p>
+                This interaction creates 16 possible final choices. The second
+                choice will depend on the first choice, so users will not be able
+                to select an object until they have selected its category. Once an
+                object is selected, the application will display the same types of
+                information for every selection. This information will include the
+                object's name, an image, a short description, its size, its location
+                or distance, and an interesting fact. The data can eventually be
+                stored in a JSON file and later transferred into the database used
+                by the application.
+            </p>
+        </section>
+
+
+        <section id="additional-data">
+            <h2>Additional Application Data</h2>
+
+            <p>
+                The third page of the application will contain general Solar System
+                information that users can read without making a selection. This
+                information will not repeat the object-specific information from the
+                Explore page. Possible topics will include how the Solar System
+                formed, how gravity affects objects, how planets orbit the Sun, the
+                difference between planets and dwarf planets, and the history of
+                space exploration. The page may also include information about
+                spacecraft and important discoveries that have helped scientists
+                understand our Solar System.
+            </p>
+        </section>
+
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <p>
+                The fourth page will be a Contact Us page. This page will initially
+                be static, but it can later be connected to the application's
+                database. The application will eventually collect the user's name,
+                email address, subject, and message. Users could use the form to
+                provide feedback about the application, report incorrect information,
+                or suggest additional objects that could be included in the Solar
+                System Explorer.
+            </p>
+        </section>
+
+
+        <section id="references">
+            <h2>Outside Resources</h2>
+
+            <p>
+                The following resources will be used to research and verify
+                information for the Solar System Explorer:
+            </p>
+
+            <ul>
+                <li>
+                    <a href="https://science.nasa.gov/solar-system/" target="_blank">
+                        NASA - Solar System
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.esa.int/Science_Exploration/Space_Science" target="_blank">
+                        European Space Agency - Space Science
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>CSCI 3054 Web Programming | Project 2 | Tyrell Kershaw</p>
+    </footer>
+
+</body>
+</html>
