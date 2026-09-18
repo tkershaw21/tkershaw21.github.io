@@ -1,1 +1,96 @@
+/* General page styling */
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* Header */
+
+header {
+    background-color: #14213d;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+
+/* Main content */
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+
+/* Sections */
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+section h2 {
+    color: #14213d;
+    border-bottom: 2px solid #14213d;
+    padding-bottom: 8px;
+}
+
+section h3 {
+    color: #333;
+}
+
+
+/* Lists */
+
+ol {
+    padding-left: 30px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* Links */
+
+a {
+    color: #1d4e89;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #14213d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
