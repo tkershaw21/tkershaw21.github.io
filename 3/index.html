@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +20,7 @@
 
     <main>
 
-        <section id="topic-description">
+        <section class="card" id="topic-description">
             <h2>Topic Description</h2>
 
             <p>
@@ -52,7 +53,7 @@
         </section>
 
 
-        <section id="app-description">
+        <section class="card" id="app-description">
             <h2>Application Description</h2>
 
             <p>
@@ -71,67 +72,104 @@
                 steps in sequence. First, they will select one of four categories
                 of Solar System objects. After making that selection, the application
                 will provide four choices from that category. The user will then
-                select one of those objects to see information about it. The final
-                result will contain the object's name, image, description, size,
-                location or distance, and an interesting fact.
+                select one of those objects to see information about it.
             </p>
 
             <h3>Two-Step Interaction</h3>
 
             <ol>
                 <li>
-                    <strong>Step 1: Choose a category</strong>
-
-                    <ul>
-                        <li>Planets</li>
-                        <li>Moons</li>
-                        <li>Dwarf Planets</li>
-                        <li>Small Solar System Bodies</li>
-                    </ul>
+                    <strong>Step 1:</strong> Choose a category of Solar System object.
                 </li>
-
                 <li>
-                    <strong>Step 2: Choose an object from the selected category</strong>
-
-                    <ul>
-                        <li>
-                            <strong>Planets:</strong>
-                            Mercury, Venus, Earth, Mars
-                        </li>
-
-                        <li>
-                            <strong>Moons:</strong>
-                            Moon, Europa, Titan, Ganymede
-                        </li>
-
-                        <li>
-                            <strong>Dwarf Planets:</strong>
-                            Pluto, Ceres, Eris, Haumea
-                        </li>
-
-                        <li>
-                            <strong>Small Solar System Bodies:</strong>
-                            Asteroids, Comets, Meteoroids, Kuiper Belt Objects
-                        </li>
-                    </ul>
+                    <strong>Step 2:</strong> Choose an object from the selected category.
                 </li>
             </ol>
 
             <p>
-                This interaction creates 16 possible final choices. The second
-                choice will depend on the first choice, so users will not be able
-                to select an object until they have selected its category. Once an
-                object is selected, the application will display the same types of
-                information for every selection. This information will include the
-                object's name, an image, a short description, its size, its location
-                or distance, and an interesting fact. The data can eventually be
-                stored in a JSON file and later transferred into the database used
-                by the application.
+                The second choice will depend on the first choice. Once an object is
+                selected, the application will display the object's name, image,
+                description, size, location or distance, and an interesting fact.
+                The data can eventually be stored in a JSON file and later
+                transferred into the database used by the application.
             </p>
         </section>
 
 
-        <section id="additional-data">
+        <section class="card" id="object-choices">
+            <h2>Solar System Object Choices</h2>
+
+            <p>
+                The Explore page will contain four categories. Each category will
+                contain four choices, creating 16 possible final selections.
+            </p>
+
+            <div class="category-grid">
+
+                <div class="category-card">
+                    <h3>Planets</h3>
+                    <ul>
+                        <li>Mercury</li>
+                        <li>Venus</li>
+                        <li>Earth</li>
+                        <li>Mars</li>
+                    </ul>
+                </div>
+
+                <div class="category-card">
+                    <h3>Moons</h3>
+                    <ul>
+                        <li>Moon</li>
+                        <li>Europa</li>
+                        <li>Titan</li>
+                        <li>Ganymede</li>
+                    </ul>
+                </div>
+
+                <div class="category-card">
+                    <h3>Dwarf Planets</h3>
+                    <ul>
+                        <li>Pluto</li>
+                        <li>Ceres</li>
+                        <li>Eris</li>
+                        <li>Haumea</li>
+                    </ul>
+                </div>
+
+                <div class="category-card">
+                    <h3>Small Solar System Bodies</h3>
+                    <ul>
+                        <li>Asteroids</li>
+                        <li>Comets</li>
+                        <li>Meteoroids</li>
+                        <li>Kuiper Belt Objects</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="final-information">
+                <h3>Information Displayed</h3>
+
+                <p>
+                    Every final selection will display the same types of information
+                    so that the application can reuse the same JavaScript and data
+                    structure for each choice.
+                </p>
+
+                <div class="info-grid">
+                    <div class="info-card">Name</div>
+                    <div class="info-card">Image</div>
+                    <div class="info-card">Description</div>
+                    <div class="info-card">Size</div>
+                    <div class="info-card">Location / Distance</div>
+                    <div class="info-card">Interesting Fact</div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="card" id="additional-data">
             <h2>Additional Application Data</h2>
 
             <p>
@@ -141,29 +179,35 @@
                 Explore page. Possible topics will include how the Solar System
                 formed, how gravity affects objects, how planets orbit the Sun, the
                 difference between planets and dwarf planets, and the history of
-                space exploration. The page may also include information about
-                spacecraft and important discoveries that have helped scientists
-                understand our Solar System.
+                space exploration.
+            </p>
+
+            <p>
+                The page may also include information about spacecraft and important
+                discoveries that have helped scientists understand our Solar System.
             </p>
         </section>
 
 
-        <section id="contact">
+        <section class="card" id="contact">
             <h2>Contact Us</h2>
 
             <p>
                 The fourth page will be a Contact Us page. This page will initially
                 be static, but it can later be connected to the application's
                 database. The application will eventually collect the user's name,
-                email address, subject, and message. Users could use the form to
-                provide feedback about the application, report incorrect information,
-                or suggest additional objects that could be included in the Solar
-                System Explorer.
+                email address, subject, and message.
+            </p>
+
+            <p>
+                Users could use the form to provide feedback about the application,
+                report incorrect information, or suggest additional objects that
+                could be included in the Solar System Explorer.
             </p>
         </section>
 
 
-        <section id="references">
+        <section class="card" id="references">
             <h2>Outside Resources</h2>
 
             <p>
@@ -171,15 +215,19 @@
                 information for the Solar System Explorer:
             </p>
 
-            <ul>
+            <ul class="resource-list">
                 <li>
-                    <a href="https://science.nasa.gov/solar-system/" target="_blank">
+                    <a href="https://science.nasa.gov/solar-system/"
+                       target="_blank"
+                       rel="noopener noreferrer">
                         NASA - Solar System
                     </a>
                 </li>
 
                 <li>
-                    <a href="https://www.esa.int/Science_Exploration/Space_Science" target="_blank">
+                    <a href="https://www.esa.int/Science_Exploration/Space_Science"
+                       target="_blank"
+                       rel="noopener noreferrer">
                         European Space Agency - Space Science
                     </a>
                 </li>
@@ -195,3 +243,4 @@
 
 </body>
 </html>
+```
