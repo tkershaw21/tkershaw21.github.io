@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View the Solar System Explorer contact form for questions, corrections, and suggestions.">
+    <title>Contact Us | Solar System Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
+    <header class="site-header">
+        <a class="brand" href="index.html">Solar System Explorer</a>
+        <nav aria-label="Main navigation">
+            <a href="explore.html">Explore</a>
+            <a href="information.html">Learn</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+            <a href="index.html">Log Out</a>
+        </nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+        <section class="page-intro">
+            <p class="eyebrow">Questions and feedback</p>
+            <h1>Contact Us</h1>
+            <p>
+                Have a question, notice a correction, or want to suggest
+                another object? This page shows how the future contact
+                form will look.
+            </p>
+        </section>
+
+        <div class="two-column">
+            <section class="card">
+                <h2>Your message</h2>
+
+                <p class="note" id="contact-note">
+                    This form is a static mockup. Sending messages
+                    will be added in a later project stage.
+                </p>
+
+                <form aria-describedby="contact-note">
+                    <label for="contact-name">Name</label>
+                    <input
+                        type="text"
+                        id="contact-name"
+                        placeholder="Your name"
+                    >
+
+                    <label for="contact-email">Email address</label>
+                    <input
+                        type="email"
+                        id="contact-email"
+                        placeholder="you@example.com"
+                    >
+
+                    <label for="contact-subject">Subject</label>
+                    <select id="contact-subject">
+                        <option value="">Choose a subject</option>
+                        <option value="question">General question</option>
+                        <option value="correction">Report a correction</option>
+                        <option value="suggestion">Suggest an object</option>
+                        <option value="feedback">Website feedback</option>
+                    </select>
+
+                    <label for="contact-message">Message</label>
+                    <textarea
+                        id="contact-message"
+                        placeholder="Write your message here."
+                    ></textarea>
+
+                    <button class="button" type="button" disabled>
+                        Send Message — Coming Later
+                    </button>
+
+                    <button class="button secondary" type="reset">
+                        Clear Form
+                    </button>
+                </form>
+            </section>
+
+            <aside class="card">
+                <h2>What to include</h2>
+                <ul>
+                    <li>
+                        For a correction, identify the object and
+                        the information you want reviewed.
+                    </li>
+                    <li>
+                        Include a reliable source when suggesting
+                        a scientific change.
+                    </li>
+                    <li>
+                        For a website problem, describe the page
+                        and what you expected to happen.
+                    </li>
+                </ul>
+
+                <h2>About this project</h2>
+                <p>
+                    Solar System Explorer is an educational web
+                    programming project by Tyrell Kershaw.
+                    It organizes a selected collection of solar
+                    system objects into a two-step browsing process.
+                </p>
+
+                <p>
+                    <a href="information.html#sources">
+                        View the information sources
+                    </a>
+                </p>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tyrell Kershaw | Solar System Explorer</p>
+        <p><a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>
