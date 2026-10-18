@@ -1,1 +1,204 @@
-
+{
+    "categories": [
+        {
+            "name": "Planets",
+            "description": "Visit Mercury, Venus, Earth, and Mars: the four rocky planets closest to the Sun.",
+            "objects": [
+                {
+                    "name": "Mercury",
+                    "type": "Rocky planet",
+                    "description": "Mercury is the smallest planet and the closest planet to the Sun. Its rocky surface contains many impact craters, and temperatures change greatly between day and night.",
+                    "size": "About 4,880 km in diameter.",
+                    "location": "An average of about 58 million km from the Sun.",
+                    "fact": "Mercury completes one orbit around the Sun in only 88 Earth days.",
+                    "image": "https://science.nasa.gov/wp-content/uploads/2017/10/pia15051-mercury.jpg",
+                    "alt": "Mercury showing its crater-covered surface.",
+                    "source": "https://science.nasa.gov/mercury/facts/"
+                },
+                {
+                    "name": "Venus",
+                    "type": "Rocky planet",
+                    "description": "Venus is similar to Earth in size, but its thick atmosphere traps enormous amounts of heat. Clouds hide its rocky surface from ordinary visible-light views.",
+                    "size": "About 12,104 km in diameter.",
+                    "location": "An average of about 108 million km from the Sun.",
+                    "fact": "Venus is hotter than Mercury even though Mercury is closer to the Sun.",
+                    "image": "https://science.nasa.gov/wp-content/uploads/2024/03/venus-mariner-10-pia23791-fig2-16x9-1.jpg",
+                    "alt": "Cloud-covered Venus photographed by Mariner 10.",
+                    "source": "https://science.nasa.gov/venus/venus-facts/"
+                },
+                {
+                    "name": "Earth",
+                    "type": "Rocky planet",
+                    "description": "Earth has liquid-water oceans, a protective atmosphere, and environments that support life. It is the largest of the four rocky planets in our solar system.",
+                    "size": "About 12,756 km in diameter at the equator.",
+                    "location": "An average of about 150 million km from the Sun.",
+                    "fact": "Earth's tilted axis causes the seasons as the planet travels around the Sun.",
+                    "image": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002131/GSFC_20171208_Archive_e002131~large.jpg",
+                    "alt": "Earth showing blue oceans, white clouds, and continents.",
+                    "source": "https://science.nasa.gov/earth/facts/"
+                },
+                {
+                    "name": "Mars",
+                    "type": "Rocky planet",
+                    "description": "Mars is a cold, rocky world with a thin atmosphere. Iron minerals that have reacted with oxygen give much of its surface a reddish appearance.",
+                    "size": "About 6,780 km in diameter.",
+                    "location": "An average of about 228 million km from the Sun.",
+                    "fact": "Mars has two small moons named Phobos and Deimos.",
+                    "image": "https://science.nasa.gov/wp-content/uploads/2017/11/pia17944.jpg",
+                    "alt": "Mars showing its reddish surface and darker markings.",
+                    "source": "https://science.nasa.gov/mars/facts/"
+                }
+            ]
+        },
+        {
+            "name": "Moons",
+            "description": "Explore the Moon, Europa, Titan, and Ganymede: four natural satellites with different environments.",
+            "objects": [
+                {
+                    "name": "The Moon",
+                    "type": "Earth's natural satellite",
+                    "description": "The Moon is a rocky world with impact craters and dark plains formed by ancient volcanic activity. Its gravity contributes to Earth's ocean tides.",
+                    "size": "About 3,480 km in diameter.",
+                    "location": "Orbits Earth at an average distance of about 384,400 km.",
+                    "fact": "The Moon rotates once in approximately the same time it takes to orbit Earth, so the same side generally faces us.",
+                    "image": "https://science.nasa.gov/wp-content/uploads/2023/03/moon-1-jpeg.webp",
+                    "alt": "Composite illustration showing the Moon in front of Earth; not to scale.",
+                    "source": "https://science.nasa.gov/moon/"
+                },
+                {
+                    "name": "Europa",
+                    "type": "Natural satellite of Jupiter",
+                    "description": "Europa has a bright icy surface crossed by dark cracks and streaks. Evidence strongly suggests that a saltwater ocean lies beneath its frozen exterior.",
+                    "size": "About 3,100 km in diameter.",
+                    "location": "Orbits Jupiter in the outer solar system.",
+                    "fact": "Europa's hidden ocean may contain more water than all of Earth's oceans combined.",
+                    "image": "https://science.nasa.gov/wp-content/uploads/2024/07/pia19048-europa-stunning-surface.jpg",
+                    "alt": "Europa showing its icy surface and intersecting darker streaks.",
+                    "source": "https://science.nasa.gov/jupiter/jupiter-moons/europa/europa-facts/"
+                },
+                {
+                    "name": "Titan",
+                    "type": "Natural satellite of Saturn",
+                    "description": "Titan is Saturn's largest moon. A thick atmosphere and orange haze surround its icy surface, where methane and ethane form lakes and seas.",
+                    "size": "About 5,150 km in diameter.",
+                    "location": "Orbits Saturn in the outer solar system.",
+                    "fact": "The Huygens probe landed on Titan in 2005 and sent back information from its surface.",
+                    "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/1/177_PIA14909.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+                    "alt": "Titan surrounded by atmospheric haze.",
+                    "source": "https://science.nasa.gov/saturn/moons/titan/facts/"
+                },
+                {
+                    "name": "Ganymede",
+                    "type": "Natural satellite of Jupiter",
+                    "description": "Ganymede is the largest moon in the solar system. Its surface includes old, dark terrain and brighter regions crossed by grooves.",
+                    "size": "About 5,260 km in diameter.",
+                    "location": "Orbits Jupiter in the outer solar system.",
+                    "fact": "Ganymede generates its own magnetic field and is wider than the planet Mercury.",
+                    "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/Ganymede_from_Juno.jpeg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+                    "alt": "Ganymede showing bright and dark regions on its cratered surface.",
+                    "source": "https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/"
+                }
+            ]
+        },
+        {
+            "name": "Dwarf Planets",
+            "description": "Meet Pluto, Ceres, Eris, and Haumea: small worlds with remarkable histories.",
+            "objects": [
+                {
+                    "name": "Pluto",
+                    "type": "Dwarf planet",
+                    "description": "Pluto is a distant icy world with mountains, plains, and a thin atmosphere. A bright, heart-shaped region is one of its most recognizable features.",
+                    "size": "About 2,377 km in diameter.",
+                    "location": "In the Kuiper Belt, averaging about 5.9 billion km from the Sun.",
+                    "fact": "NASA's New Horizons spacecraft flew past Pluto in July 2015.",
+                    "image": "https://science.nasa.gov/wp-content/uploads/2024/03/pluto-new-horizons-pia20291-16x9-1.jpg?w=640",
+                    "alt": "Pluto showing a bright heart-shaped region.",
+                    "source": "https://science.nasa.gov/dwarf-planets/pluto/facts/"
+                },
+                {
+                    "name": "Ceres",
+                    "type": "Dwarf planet",
+                    "description": "Ceres is the largest object in the main asteroid belt. Its surface contains many craters, and bright salt deposits appear in some areas.",
+                    "size": "About 950 km across.",
+                    "location": "In the main asteroid belt between Mars and Jupiter.",
+                    "fact": "NASA's Dawn spacecraft entered orbit around Ceres in 2015.",
+                    "image": "https://science.nasa.gov/wp-content/uploads/2018/10/pia21906-ceres-full-globe-1280x900-1.jpg",
+                    "alt": "Ceres showing its gray, cratered surface.",
+                    "source": "https://science.nasa.gov/dwarf-planets/ceres/facts/"
+                },
+                {
+                    "name": "Eris",
+                    "type": "Dwarf planet",
+                    "description": "Eris is a cold, distant dwarf planet with an icy surface. Its discovery helped astronomers reconsider how planets should be classified.",
+                    "size": "About 2,300 km in diameter, similar in size to Pluto.",
+                    "location": "Beyond Neptune, averaging about 10 billion km from the Sun.",
+                    "fact": "Eris has a moon named Dysnomia.",
+                    "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/h/HubbleviewErisDysnomia-1.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+                    "alt": "Hubble telescope view of Eris and its moon Dysnomia as small points of light.",
+                    "source": "https://science.nasa.gov/dwarf-planets/eris/"
+                },
+                {
+                    "name": "Haumea",
+                    "type": "Dwarf planet",
+                    "description": "Haumea is an icy dwarf planet with an elongated shape. Its rapid rotation helps explain why it is stretched out rather than nearly spherical.",
+                    "size": "Roughly 1,700 km across; its width varies because it is elongated.",
+                    "location": "In the Kuiper Belt beyond Neptune.",
+                    "fact": "Haumea rotates in about four hours and has a ring system.",
+                    "image": "https://science.nasa.gov/wp-content/uploads/2024/03/haumea-30jun2015-22-28ok2-final-16x9-1.jpg",
+                    "alt": "Telescope image showing Haumea and its moons as small points of light.",
+                    "source": "https://science.nasa.gov/dwarf-planets/haumea/"
+                }
+            ]
+        },
+        {
+            "name": "Small Solar System Bodies",
+            "description": "Investigate Halley's Comet, Eros, Vesta, and Arrokoth for clues about the early solar system.",
+            "objects": [
+                {
+                    "name": "Halley's Comet",
+                    "type": "Periodic comet",
+                    "description": "Halley's Comet contains ice, dust, and rocky material. As it approaches the Sun, warming releases gas and dust that form a surrounding cloud and tails.",
+                    "size": "Its solid nucleus is about 15 km long and 8 km wide.",
+                    "location": "Travels around the Sun on an elongated orbit reaching beyond Neptune.",
+                    "fact": "Its orbital period averages about 76 years. Spacecraft studied it closely during its 1986 visit.",
+                    "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/Giotto_halley_br.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+                    "alt": "Halley's Comet nucleus and escaping material photographed by Giotto.",
+                    "source": "https://science.nasa.gov/solar-system/comets/1p-halley/"
+                },
+                {
+                    "name": "Eros",
+                    "type": "Near-Earth asteroid",
+                    "description": "Eros is an elongated rocky asteroid covered with craters, boulders, and loose surface material. Close spacecraft observations revealed details that telescopes could not resolve.",
+                    "size": "About 34 km along its longest dimension.",
+                    "location": "Orbits the Sun and is classified as a near-Earth asteroid.",
+                    "fact": "NEAR Shoemaker landed on Eros in 2001, completing the first spacecraft landing on an asteroid.",
+                    "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/Eros_main.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+                    "alt": "Eros showing its elongated shape and cratered surface.",
+                    "source": "https://science.nasa.gov/solar-system/asteroids/433-eros/"
+                },
+                {
+                    "name": "Vesta",
+                    "type": "Main-belt asteroid",
+                    "description": "Vesta is a large rocky asteroid with a layered interior. Its surface records ancient melting and powerful impacts, including enormous craters near its south pole.",
+                    "size": "About 530 km across on average.",
+                    "location": "In the main asteroid belt between Mars and Jupiter.",
+                    "fact": "Some meteorites found on Earth came from Vesta after impacts launched material into space.",
+                    "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/4_vesta_main.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+                    "alt": "Vesta showing its irregular outline and impact-scarred surface.",
+                    "source": "https://science.nasa.gov/solar-system/asteroids/4-vesta/"
+                },
+                {
+                    "name": "Arrokoth",
+                    "type": "Kuiper Belt object",
+                    "description": "Arrokoth consists of two joined lobes and has a reddish surface. It preserves evidence about how small objects combined during the early formation of the solar system.",
+                    "size": "About 35 km from end to end.",
+                    "location": "In the Kuiper Belt, about 6.5 billion km from the Sun.",
+                    "fact": "New Horizons flew past Arrokoth on January 1, 2019.",
+                    "image": "https://science.nasa.gov/wp-content/uploads/2018/11/arrokoth-1920x640-1.jpg",
+                    "alt": "Arrokoth showing its two connected lobes.",
+                    "source": "https://science.nasa.gov/solar-system/kuiper-belt/arrokoth-2014-mu69/facts/"
+                }
+            ]
+        }
+    ]
+}
