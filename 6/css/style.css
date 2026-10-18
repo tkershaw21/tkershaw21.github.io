@@ -481,3 +481,35 @@ footer a {
         padding: 30px;
     }
 }
+
+/* Hide inactive explorer sections, including grid and flex layouts. */
+
+[hidden] {
+    display: none !important;
+}
+
+/* Keep explorer controls usable on small screens. */
+
+.explore-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.explore-actions .button {
+    max-width: 100%;
+}
+
+.choice figure {
+    margin-bottom: 16px;
+}
+
+.choice figcaption {
+    overflow-wrap: anywhere;
+}
+
+#explore-heading:focus {
+    outline: 3px solid #a44700;
+    outline-offset: 5px;
+}
