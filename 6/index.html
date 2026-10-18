@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tyrell Kershaw">
+    <meta name="description" content="Explore planets, moons, dwarf planets, and small solar system bodies with the interactive Solar System Explorer.">
+    <meta name="keywords" content="solar system, astronomy, planets, moons, dwarf planets, asteroids, comets, space">
+    <title>Home | Solar System Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
 
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <a class="brand" href="index.html">Solar System Explorer</a>
+        <p>A closer look at our cosmic neighborhood</p>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="learn.html">Learn</a>
+            <a href="contact.html">Contact</a>
+            <a href="#login">Log In / Sign Up</a>
+        </nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+        <div class="two-column">
+            <section class="card">
+                <h1>Discover the Solar System</h1>
+
+                <p>
+                    Explore rocky planets, icy moons, distant dwarf planets,
+                    and smaller objects that preserve clues about the
+                    beginning of our solar system.
+                </p>
+
+                <p>
+                    Solar System Explorer organizes a collection of 16 objects
+                    into four categories. Choose a category, select an object,
+                    and discover its size, location, appearance, and history.
+                </p>
+
+                <figure>
+                    <img
+                        class="object-image"
+                        src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002131/GSFC_20171208_Archive_e002131~large.jpg"
+                        alt="Earth showing blue oceans, white clouds, and continents."
+                    >
+
+                    <figcaption>
+                        Earth, our home in the solar system.
+                        <cite>
+                            <a href="https://science.nasa.gov/earth/facts/">
+                                Learn about Earth at NASA
+                            </a>
+                        </cite>
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section class="card" id="login">
+                <h2>Welcome, Explorer</h2>
+
+                <p>
+                    You are exploring with a sample account.
+                    No email address or password is needed for this preview.
+                </p>
+
+                <p>
+                    Start with a category, then choose an object to discover
+                    what makes it unique.
+                </p>
+
+                <a class="button" href="explore.html">
+                    Start Exploring
+                </a>
+            </section>
+        </div>
+
+        <section class="card">
+            <h2>How Exploration Works</h2>
+
+            <ol>
+                <li>
+                    <strong>Choose a category:</strong>
+                    planets, moons, dwarf planets, or small solar system bodies.
+                </li>
+                <li>
+                    <strong>Choose an object:</strong>
+                    select one of four objects in that category to display
+                    its information.
+                </li>
+            </ol>
+
+            <p>
+                Your selections update the Explore page directly.
+                Each object includes an image, description, size,
+                location or distance, and an interesting fact.
+                You can choose another object or return to the categories
+                without opening a different page.
+            </p>
+
+            <p>
+                Visit the <a href="learn.html">Learn page</a> to discover
+                the ideas connecting these different worlds.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>What Can You Explore?</h2>
+
+            <ul>
+                <li>
+                    <strong>Planets:</strong>
+                    discover worlds that orbit the Sun and compare
+                    their environments.
+                </li>
+                <li>
+                    <strong>Moons:</strong>
+                    explore natural satellites and their varied landscapes.
+                </li>
+                <li>
+                    <strong>Dwarf planets:</strong>
+                    learn about smaller, nearly round worlds that orbit the Sun.
+                </li>
+                <li>
+                    <strong>Small solar system bodies:</strong>
+                    investigate asteroids and comets for clues about
+                    the solar system's past.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tyrell Kershaw | Solar System Explorer</p>
+        <p>CSCI 3054 Web Programming | Project 4</p>
+    </footer>
+</body>
+</html>
