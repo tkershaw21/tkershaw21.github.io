@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Tyrell Kershaw">
+  <meta name="description" content="Learn about solar system formation, gravity, orbits, and exploration.">
+  <meta name="keywords" content="solar system, astronomy, gravity, orbits, space exploration">
+  <meta name="theme-color" content="#14213d">
+
+  <title>Learn | Solar System Explorer</title>
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+
+<body data-page="information" data-protected="true">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/favicon.svg" width="38" height="38" alt="">
+        <span>Solar System Explorer</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="information.html" aria-current="page">Learn</a></li>
+          <li><a href="contact.html">Contact</a></li>
+
+          <li data-member hidden>
+            <a href="password.html">Change password</a>
+          </li>
+
+          <li data-member hidden>
+            <button type="button" id="logout">Log out</button>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="header-note" id="session-label">Checking sign-in…</p>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-shell" tabindex="-1">
+    <p
+      id="app-status"
+      class="status"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    >Connecting…</p>
+
+    <noscript>
+      <p class="notice">
+        JavaScript is required. Enable it and reload this page.
+      </p>
+    </noscript>
+
+    <section
+      id="auth-gate"
+      class="panel gate"
+      aria-labelledby="gate-title"
+    >
+      <h1 id="gate-title">Checking your sign-in…</h1>
+
+      <p id="gate-message" role="status">
+        Please wait while we check your account.
+      </p>
+
+      <a class="button secondary" href="index.html#account">
+        Go to Home and sign in
+      </a>
+    </section>
+
+    <div id="page-content" hidden>
+      <div class="page-heading">
+        <p class="eyebrow">A little context goes a long way</p>
+        <h1>Solar system essentials</h1>
+
+        <p class="lead">
+          Learn the ideas that connect the worlds in your field guide.
+        </p>
+      </div>
+
+      <div class="learn-layout">
+        <nav class="panel contents-nav" aria-label="On this page">
+          <h2>On this page</h2>
+
+          <ul>
+            <li><a href="#formation">Our beginnings</a></li>
+            <li><a href="#gravity">Gravity &amp; orbits</a></li>
+            <li><a href="#families">Types of objects</a></li>
+            <li><a href="#distances">Reading the numbers</a></li>
+            <li><a href="#exploration">How we explore</a></li>
+            <li><a href="#sources">Sources &amp; credits</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <section class="panel article-section" id="formation">
+            <h2>Our beginnings</h2>
+
+            <p>
+              The solar system formed about 4.6 billion years ago from
+              a cloud of gas and dust. As gravity drew material together,
+              most collected in the center to form the Sun. Remaining
+              material spread into a disk, where collisions and
+              gravitational attraction helped build larger objects.
+            </p>
+
+            <p>
+              The warmer inner region favored rocky materials. Farther
+              out, colder conditions allowed more ice to survive.
+              The planets, moons, and smaller objects we study today
+              preserve different parts of this history. An asteroid or
+              comet can therefore offer evidence that a large,
+              geologically active planet has erased.
+            </p>
+
+            <figure class="wide-figure">
+              <img
+                src="https://assets.science.nasa.gov/dynamicimage/assets/science/cds/general/images/2023/06/s/solar-system-illustration-16x9-1.jpg?w=6600&amp;h=3712&amp;fit=clip&amp;crop=faces%2Cfocalpoint"
+                width="640"
+                height="360"
+                alt="Artist’s illustration of the Sun and solar system objects; sizes and distances are not to scale."
+                loading="lazy"
+              >
+
+              <figcaption>
+                Artist’s illustration; sizes and distances are not
+                to scale.
+                <a href="https://science.nasa.gov/solar-system/solar-system-facts/">
+                  Image and source: NASA
+                </a>
+              </figcaption>
+            </figure>
+          </section>
+
+          <section class="panel article-section" id="gravity">
+            <h2>Gravity &amp; orbits</h2>
+
+            <p>
+              Gravity pulls objects toward one another. An orbit combines
+              that inward pull with forward motion: a moving world keeps
+              falling around the object it orbits. Planets travel around
+              the Sun, while moons orbit planets or other bodies.
+            </p>
+
+            <p>
+              Orbits are ellipses, although many are close to circles.
+              Distance therefore changes throughout an orbit. The guide
+              uses rounded averages or general locations to avoid
+              suggesting that an object stays at one fixed distance.
+              Rotation is different from orbiting: rotation is a world
+              turning on its own axis.
+            </p>
+          </section>
+
+          <section class="panel article-section" id="families">
+            <h2>Types of objects</h2>
+
+            <p>
+              <strong>Planets</strong> orbit the Sun, are nearly round,
+              and dominate their orbital neighborhoods gravitationally.
+              The eight planets include four rocky terrestrial planets
+              and four giant planets.
+            </p>
+
+            <p>
+              <strong>Dwarf planets</strong> also orbit the Sun and are
+              rounded by gravity, but have not cleared their
+              neighborhoods. They are not moons. Pluto and Ceres belong
+              to this group even though their locations and histories
+              differ greatly.
+            </p>
+
+            <p>
+              <strong>Moons</strong> are natural satellites. A moon can
+              be larger than a planet—Ganymede is wider than
+              Mercury—because the classification depends on what it
+              orbits, not just its size.
+            </p>
+
+            <p>
+              <strong>Small solar system bodies</strong> include most
+              asteroids and comets. Asteroids are generally rocky or
+              metallic; comets contain substantial ice that can release
+              gas and dust when warmed. Small Kuiper Belt objects such
+              as Arrokoth preserve materials from the distant outer
+              solar system.
+            </p>
+
+            <p class="small">
+              <a href="https://science.nasa.gov/solar-system/">
+                NASA: Solar system overview
+              </a>
+            </p>
+          </section>
+
+          <section class="panel article-section" id="distances">
+            <h2>Reading the numbers</h2>
+
+            <p>
+              An <strong>astronomical unit (AU)</strong> is approximately
+              the average Earth–Sun distance, about 150 million
+              kilometers. A planet 2 AU from the Sun is about twice
+              as far out as Earth. For a moon, its distance from its
+              parent planet is often more useful than its distance
+              from the Sun.
+            </p>
+
+            <p>
+              A diameter measures the width through the center of an
+              object. Some worlds are not perfectly round, so a source
+              may report an equatorial or mean diameter. For irregular
+              bodies, several dimensions communicate the shape more
+              clearly.
+            </p>
+
+            <div
+              class="table-wrap"
+              tabindex="0"
+              role="region"
+              aria-label="Scrollable comparison of four rocky planets"
+            >
+              <table>
+                <caption>
+                  Four rocky planets — rounded reference values
+                </caption>
+
+                <thead>
+                  <tr>
+                    <th scope="col">Planet</th>
+                    <th scope="col">Diameter (km)</th>
+                    <th scope="col">Sun distance (AU)</th>
+                    <th scope="col">Orbital period</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      <a href="explore.html?category=planets&amp;object=mercury">
+                        Mercury
+                      </a>
+                    </th>
+                    <td>4,880</td>
+                    <td>0.39</td>
+                    <td>88 days</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">
+                      <a href="explore.html?category=planets&amp;object=venus">
+                        Venus
+                      </a>
+                    </th>
+                    <td>12,104</td>
+                    <td>0.72</td>
+                    <td>225 days</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">
+                      <a href="explore.html?category=planets&amp;object=earth">
+                        Earth
+                      </a>
+                    </th>
+                    <td>12,756</td>
+                    <td>1.00</td>
+                    <td>365.25 days</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">
+                      <a href="explore.html?category=planets&amp;object=mars">
+                        Mars
+                      </a>
+                    </th>
+                    <td>6,780</td>
+                    <td>1.52</td>
+                    <td>687 days</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p class="small">
+              Earth and Venus values are equatorial diameters.
+              Distances are rounded orbital averages; orbital periods
+              use Earth time. Sources are linked in each object's
+              Explore details.
+            </p>
+          </section>
+
+          <section class="panel article-section" id="exploration">
+            <h2>How we explore</h2>
+
+            <p>
+              Different missions answer different questions. A telescope
+              can monitor a distant world repeatedly. A flyby records
+              details during a brief encounter. An orbiter observes a
+              world over time, and a lander or rover can examine
+              material directly at the surface.
+            </p>
+
+            <p>
+              Images also require careful interpretation. Some show
+              approximately natural colors, others enhance differences
+              that would be difficult to see, and some distant objects
+              are represented by artists’ concepts. Check each caption
+              before treating an illustration as a photograph.
+            </p>
+
+            <ol class="timeline">
+              <li>
+                <strong>2000–2001 · Eros</strong>
+                NEAR Shoemaker orbited the asteroid and then landed on it.
+              </li>
+
+              <li>
+                <strong>2011–2012 · Vesta</strong>
+                Dawn mapped Vesta before traveling onward to Ceres.
+              </li>
+
+              <li>
+                <strong>2015 · Pluto</strong>
+                New Horizons revealed mountains, glaciers, and a
+                complex surface.
+              </li>
+
+              <li>
+                <strong>2019 · Arrokoth</strong>
+                New Horizons examined the two-lobed Kuiper Belt object.
+              </li>
+            </ol>
+          </section>
+
+          <section class="panel article-section" id="sources">
+            <h2>Sources &amp; image credits</h2>
+
+            <p>
+              Scientific summaries are paraphrased from NASA resources.
+              Measurements are approximate reference values, not live
+              tracking data. Each object's Explore details include
+              its source and image credit.
+            </p>
+
+            <ul class="source-list">
+              <li>
+                <a href="https://science.nasa.gov/solar-system/solar-system-facts/">
+                  NASA: Solar system facts
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.nasa.gov/nasa-brand-center/images-and-media/">
+                  NASA: Images and media usage guidance
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.esa.int/Science_Exploration/Space_Science">
+                  European Space Agency: Space Science
+                </a>
+              </li>
+            </ul>
+
+            <p class="small">
+              This educational project does not imply NASA or ESA
+              endorsement. The favicon was created for this project.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p><strong>Solar System Explorer</strong></p>
+        <p>© 2026 Tyrell Kershaw · CSCI 3054 · Project 5</p>
+        <p>Educational project · Not affiliated with NASA or ESA</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="information.html#sources">Sources &amp; image credits</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
