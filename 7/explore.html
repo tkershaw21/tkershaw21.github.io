@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Tyrell Kershaw">
+  <meta name="description" content="Choose a category and object to explore the solar system.">
+  <meta name="keywords" content="solar system, planets, moons, astronomy, space education">
+  <meta name="theme-color" content="#14213d">
+
+  <title>Explore | Solar System Explorer</title>
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+
+<body data-page="explore" data-protected="true">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/favicon.svg" width="38" height="38" alt="">
+        <span>Solar System Explorer</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="explore.html" aria-current="page">Explore</a></li>
+          <li><a href="information.html">Learn</a></li>
+          <li><a href="contact.html">Contact</a></li>
+
+          <li data-member hidden>
+            <a href="password.html">Change password</a>
+          </li>
+
+          <li data-member hidden>
+            <button type="button" id="logout">Log out</button>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="header-note" id="session-label">Checking sign-in…</p>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-shell" tabindex="-1">
+    <p
+      id="app-status"
+      class="status"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    >Connecting…</p>
+
+    <noscript>
+      <p class="notice">
+        JavaScript is required. Enable it and reload this page.
+      </p>
+    </noscript>
+
+    <section
+      id="auth-gate"
+      class="panel gate"
+      aria-labelledby="gate-title"
+    >
+      <h1 id="gate-title">Checking your sign-in…</h1>
+
+      <p id="gate-message" role="status">
+        Please wait while we check your account.
+      </p>
+
+      <a class="button secondary" href="index.html#account">
+        Go to Home and sign in
+      </a>
+    </section>
+
+    <div id="page-content" hidden>
+      <div class="page-heading">
+        <p class="eyebrow">Choose a path. Find a world.</p>
+        <h1>Explore the solar system</h1>
+
+        <p class="lead">
+          Step 1: choose a category.
+          Step 2: choose an object to open its details.
+        </p>
+      </div>
+
+      <p
+        id="explore-status"
+        class="status"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      ></p>
+
+      <button
+        type="button"
+        id="retry-explore"
+        class="button secondary"
+        hidden
+      >Retry loading</button>
+
+      <div id="explorer" hidden>
+        <section aria-labelledby="category-title">
+          <h2 id="category-title">1. Choose a category</h2>
+          <div id="category-buttons" class="choice-grid"></div>
+        </section>
+
+        <section
+          id="object-step"
+          class="section-heading"
+          aria-labelledby="object-title"
+          hidden
+        >
+          <div class="section-toolbar">
+            <h2 id="object-title" tabindex="-1">
+              2. Choose an object
+            </h2>
+
+            <button
+              class="button secondary"
+              type="button"
+              id="back-categories"
+            >Back to categories</button>
+          </div>
+
+          <div id="object-buttons" class="choice-grid"></div>
+        </section>
+
+        <section
+          id="object-detail"
+          class="section-heading"
+          aria-labelledby="detail-title"
+          hidden
+        >
+          <div class="section-toolbar">
+            <h2 id="detail-title" tabindex="-1"></h2>
+
+            <button
+              class="button secondary"
+              type="button"
+              id="back-objects"
+            >Back to objects</button>
+          </div>
+
+          <div class="detail-grid">
+            <figure class="object-figure">
+              <img
+                id="detail-image"
+                src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002131/GSFC_20171208_Archive_e002131~large.jpg"
+                alt=""
+              >
+
+              <figcaption>
+                <a id="detail-credit" href="https://science.nasa.gov/">
+                  Image credit
+                </a>
+              </figcaption>
+            </figure>
+
+            <div class="panel">
+              <p class="lead" id="detail-summary"></p>
+              <dl class="facts" id="detail-facts"></dl>
+
+              <p class="form-help">
+                Sizes and distances are rounded; images are not
+                to a common scale.
+              </p>
+            </div>
+          </div>
+
+          <div class="reading-grid">
+            <div
+              class="panel article-text"
+              id="detail-description"
+            ></div>
+
+            <aside class="panel fact-highlight">
+              <h3>Did you know?</h3>
+              <p id="detail-fun-fact"></p>
+
+              <a id="detail-source" href="https://science.nasa.gov/">
+                Read the NASA source
+              </a>
+            </aside>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p><strong>Solar System Explorer</strong></p>
+        <p>© 2026 Tyrell Kershaw · CSCI 3054 · Project 5</p>
+        <p>Educational project · Not affiliated with NASA or ESA</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="information.html#sources">Sources &amp; image credits</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
