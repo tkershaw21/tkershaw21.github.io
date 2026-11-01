@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Tyrell Kershaw">
+  <meta name="description" content="Send feedback, corrections, or suggestions to Solar System Explorer.">
+  <meta name="keywords" content="solar system, feedback, contact, astronomy">
+  <meta name="theme-color" content="#14213d">
+
+  <title>Contact Us | Solar System Explorer</title>
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+
+<body data-page="contact" data-protected="true">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/favicon.svg" width="38" height="38" alt="">
+        <span>Solar System Explorer</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="information.html">Learn</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+
+          <li data-member hidden>
+            <a href="password.html">Change password</a>
+          </li>
+
+          <li data-member hidden>
+            <button type="button" id="logout">Log out</button>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="header-note" id="session-label">Checking sign-in…</p>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-shell" tabindex="-1">
+    <p
+      id="app-status"
+      class="status"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    >Connecting…</p>
+
+    <noscript>
+      <p class="notice">
+        JavaScript is required. Enable it and reload this page.
+      </p>
+    </noscript>
+
+    <section
+      id="auth-gate"
+      class="panel gate"
+      aria-labelledby="gate-title"
+    >
+      <h1 id="gate-title">Checking your sign-in…</h1>
+
+      <p id="gate-message" role="status">
+        Please wait while we check your account.
+      </p>
+
+      <a class="button secondary" href="index.html#account">
+        Go to Home and sign in
+      </a>
+    </section>
+
+    <div id="page-content" hidden>
+      <div class="page-heading">
+        <p class="eyebrow">Keep the conversation going</p>
+        <h1>Contact Us</h1>
+
+        <p class="lead">
+          Ask a question, suggest another world, or help make
+          this guide better.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <section class="panel">
+          <h2>Your message</h2>
+
+          <p class="small" id="contact-help">
+            All fields are required. Your message is stored with your
+            account email. Wait for the saved confirmation before
+            leaving this page.
+          </p>
+
+          <form
+            id="contact-form"
+            method="post"
+            aria-describedby="contact-help"
+          >
+            <fieldset>
+              <legend class="sr-only">Message details</legend>
+
+              <div class="field">
+                <label for="contact-name">Name</label>
+                <input
+                  id="contact-name"
+                  autocomplete="name"
+                  required
+                  minlength="2"
+                  maxlength="80"
+                >
+              </div>
+
+              <div class="field">
+                <label for="contact-email">Account email</label>
+                <input
+                  id="contact-email"
+                  type="email"
+                  autocomplete="email"
+                  readonly
+                  required
+                  aria-describedby="email-help"
+                >
+
+                <span class="form-help" id="email-help">
+                  This is the email address you used to sign in.
+                </span>
+              </div>
+
+              <div class="field">
+                <label for="contact-subject">Subject</label>
+
+                <select id="contact-subject" required>
+                  <option value="">Choose a subject</option>
+                  <option>General question</option>
+                  <option>Report a correction</option>
+                  <option>Suggest an object</option>
+                  <option>Website feedback</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="contact-message">Message</label>
+
+                <textarea
+                  id="contact-message"
+                  rows="6"
+                  required
+                  minlength="20"
+                  maxlength="1500"
+                  aria-describedby="message-help"
+                ></textarea>
+
+                <span id="message-help" class="form-help">
+                  Write between 20 and 1,500 characters.
+                </span>
+              </div>
+
+              <button class="button" type="submit">Send message</button>
+            </fieldset>
+
+            <p
+              id="contact-status"
+              class="status"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            ></p>
+          </form>
+        </section>
+
+        <aside class="panel">
+          <h2>What to include</h2>
+
+          <ul>
+            <li>
+              For a correction, name the object and include
+              a reliable source.
+            </li>
+            <li>
+              For a website issue, describe the page and
+              what you expected.
+            </li>
+            <li>
+              For a suggestion, tell us which object you
+              want to explore next.
+            </li>
+          </ul>
+
+          <p class="small">
+            This is a class project. Sending a message saves it for
+            the project owner to review; it does not send an email.
+          </p>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p><strong>Solar System Explorer</strong></p>
+        <p>© 2026 Tyrell Kershaw · CSCI 3054 · Project 5</p>
+        <p>Educational project · Not affiliated with NASA or ESA</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="information.html#sources">Sources &amp; image credits</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
