@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Tyrell Kershaw">
+  <meta name="description" content="Explore the solar system, learn the science, and share feedback.">
+  <meta name="keywords" content="solar system, planets, moons, astronomy, space education">
+  <meta name="theme-color" content="#14213d">
+
+  <title>Home | Solar System Explorer</title>
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+
+<body data-page="index" data-protected="false">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/favicon.svg" width="38" height="38" alt="">
+        <span>Solar System Explorer</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="information.html">Learn</a></li>
+          <li><a href="contact.html">Contact</a></li>
+
+          <li data-member hidden>
+            <a href="password.html">Change password</a>
+          </li>
+
+          <li data-member hidden>
+            <button type="button" id="logout">Log out</button>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="header-note" id="session-label">Checking sign-in…</p>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-shell" tabindex="-1">
+    <p
+      id="app-status"
+      class="status"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    >Connecting…</p>
+
+    <noscript>
+      <p class="notice">
+        JavaScript is required for sign-in, exploration, and contact submissions.
+        Enable it and reload this page.
+      </p>
+    </noscript>
+
+    <div id="page-content">
+      <section class="home-hero">
+        <div>
+          <p class="eyebrow">A field guide to our cosmic neighborhood</p>
+
+          <h1>
+            There’s a whole<br>
+            solar system<br>
+            to discover.
+          </h1>
+
+          <p class="lead">
+            Meet rocky planets, icy moons, and the small worlds that hold
+            clues to our beginnings.
+          </p>
+
+          <a class="button" href="#account" id="hero-action">
+            Sign in to explore
+          </a>
+
+          <p class="small hero-note">
+            4 categories · 16 worlds · One place to start
+          </p>
+        </div>
+
+        <figure>
+          <img
+            src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002131/GSFC_20171208_Archive_e002131~large.jpg"
+            width="640"
+            height="640"
+            alt="Earth viewed from space."
+          >
+          <figcaption>Our home, Earth. Image: NASA.</figcaption>
+        </figure>
+      </section>
+
+      <section class="intro-grid" aria-label="How to use this site">
+        <article class="panel">
+          <p class="eyebrow">01 / Explore</p>
+          <h2>Choose your world</h2>
+          <p>
+            Select a category, then an object to see its image,
+            measurements, and story.
+          </p>
+        </article>
+
+        <article class="panel">
+          <p class="eyebrow">02 / Learn</p>
+          <h2>See the bigger picture</h2>
+          <p>
+            Understand gravity, orbits, distances, and the ways
+            we explore space.
+          </p>
+        </article>
+
+        <article class="panel">
+          <p class="eyebrow">03 / Connect</p>
+          <h2>Share a discovery</h2>
+          <p>
+            Suggest an object, report a correction, or send feedback
+            through Contact Us.
+          </p>
+        </article>
+      </section>
+
+      <section
+        id="account"
+        class="account-layout"
+        aria-labelledby="account-title"
+      >
+        <div>
+          <p class="eyebrow">Your next stop</p>
+          <h2 id="account-title">Start exploring</h2>
+
+          <p>
+            Create an account or log in to open Explore, Learn,
+            and Contact. Your account works on other computers, too.
+          </p>
+        </div>
+
+        <div class="panel">
+          <div id="signed-in-home" hidden>
+            <h3>You’re ready to explore.</h3>
+            <p id="welcome-email"></p>
+
+            <a class="button" id="continue-link" href="explore.html">
+              Open Explore
+            </a>
+          </div>
+
+          <div id="signed-out-home">
+            <div
+              class="button-row auth-switch"
+              role="group"
+              aria-label="Account action"
+            >
+              <button
+                class="button"
+                id="show-login"
+                type="button"
+                aria-pressed="true"
+                aria-controls="login-form"
+              >Log in</button>
+
+              <button
+                class="button secondary"
+                id="show-signup"
+                type="button"
+                aria-pressed="false"
+                aria-controls="signup-form"
+              >Sign up</button>
+            </div>
+
+            <form id="login-form" method="post">
+              <fieldset disabled>
+                <legend>Log in to your account</legend>
+
+                <div class="field">
+                  <label for="login-email">Email address</label>
+                  <input
+                    id="login-email"
+                    type="email"
+                    autocomplete="username"
+                    required
+                    maxlength="254"
+                  >
+                </div>
+
+                <div class="field">
+                  <label for="login-password">Password</label>
+                  <input
+                    id="login-password"
+                    type="password"
+                    autocomplete="current-password"
+                    required
+                  >
+                </div>
+
+                <button class="button" type="submit">Log in</button>
+              </fieldset>
+
+              <p
+                id="login-status"
+                class="status"
+                role="status"
+                aria-live="polite"
+                aria-atomic="true"
+              ></p>
+            </form>
+
+            <form id="signup-form" method="post" hidden>
+              <fieldset disabled>
+                <legend>Create your account</legend>
+
+                <div class="field">
+                  <label for="signup-email">Email address</label>
+                  <input
+                    id="signup-email"
+                    type="email"
+                    autocomplete="username"
+                    required
+                    maxlength="254"
+                  >
+                </div>
+
+                <div class="field">
+                  <label for="signup-password">Password</label>
+                  <input
+                    id="signup-password"
+                    type="password"
+                    autocomplete="new-password"
+                    required
+                    minlength="8"
+                    aria-describedby="signup-help"
+                  >
+
+                  <span id="signup-help" class="form-help">
+                    Use at least 8 characters.
+                  </span>
+                </div>
+
+                <div class="field">
+                  <label for="signup-confirm">Confirm password</label>
+                  <input
+                    id="signup-confirm"
+                    type="password"
+                    autocomplete="new-password"
+                    required
+                    minlength="8"
+                  >
+                </div>
+
+                <button class="button" type="submit">
+                  Create account
+                </button>
+              </fieldset>
+
+              <p
+                id="signup-status"
+                class="status"
+                role="status"
+                aria-live="polite"
+                aria-atomic="true"
+              ></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p><strong>Solar System Explorer</strong></p>
+        <p>© 2026 Tyrell Kershaw · CSCI 3054 · Project 5</p>
+        <p>Educational project · Not affiliated with NASA or ESA</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="information.html#sources">Sources &amp; image credits</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
