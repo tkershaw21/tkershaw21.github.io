@@ -1,9 +1,8 @@
 export const firebaseConfig = {
-  apiKey: "PASTE_YOUR_API_KEY",
-  authDomain: "PASTE_YOUR_PROJECT.firebaseapp.com",
-  databaseURL: "PASTE_YOUR_REALTIME_DATABASE_URL",
-  projectId: "PASTE_YOUR_PROJECT_ID",
-  storageBucket: "PASTE_YOUR_STORAGE_BUCKET",
-  messagingSenderId: "PASTE_YOUR_MESSAGING_SENDER_ID",
-  appId: "PASTE_YOUR_APP_ID"
+  apiKey: "AIzaSyAplEDYzZd7GgzrOcsBrVSnoQeDS6ub5nc",
+  authDomain: "solar-system-explorer-fcbe9.firebaseapp.com",
+  projectId: "solar-system-explorer-fcbe9",
+  storageBucket: "solar-system-explorer-fcbe9.firebasestorage.app",
+  messagingSenderId: "343196261348",
+  appId: "1:343196261348:web:f7406e7c3b4b2cf9fbc5f1"
 };
