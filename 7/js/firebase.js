@@ -1,4 +1,4 @@
-import { firebaseConfig } from "./firebase-config.js";
+import { firebaseConfig } from "./firebaseconfig.js";
 
 export async function connectFirebase() {
   const requiredFields = [
